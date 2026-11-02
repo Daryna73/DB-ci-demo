@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
- "scripts": {
-  "build": "echo Building project... && powershell -Command \"New-Item -ItemType Directory -Force -Path dist; Set-Content -Path dist/index.html -Value '<h1>Hello CI</h1>'\""
-},
+  "scripts": {
+    "build": "mkdir -p dist && echo '<h1>Hello CI</h1>' > dist/index.html"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC"
